@@ -1,0 +1,16 @@
+---
+version: 5
+defaults:
+  datadir: data
+  data_hash: yaml_data
+
+hierarchy:
+# OS-specific overrides
+- name: "OS-specific config"
+  paths:
+    - "%{facts.os.family}/%{facts.os.release.major}.yaml"
+    - "%{facts.os.family}/common.yaml"
+
+# Default values
+- name: "Defaults"
+  path: "common.yaml"

@@ -1,0 +1,15 @@
+---
+# Merge deeply by default
+lookup_options:
+  puppet_config::main:
+    merge:
+      strategy: 'deep'
+  puppet_config::user:
+    merge:
+      strategy: 'deep'
+  puppet_config::agent:
+    merge:
+      strategy: 'deep'
+  puppet_config::master:
+    merge:
+      strategy: 'deep'

@@ -13,7 +13,7 @@
 # Copyright 2017, Vox Pupuli
 # All Rights Reserved
 #
-define puppet_config::config_block(
+define puppet_config::config_block (
   Hash $values = {},
 ) {
   # Add the [agent] block configs

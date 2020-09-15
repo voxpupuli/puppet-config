@@ -30,7 +30,7 @@
 # Copyright 2020, Vox Pupuli
 # All Rights Reserved
 #
-class puppet_config(
+class puppet_config (
   # Default values in data/defaults.yaml
   String $config_file  = "${facts['puppet_confdir']}/puppet.conf",
   String $service_name = 'puppet',
